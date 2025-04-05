@@ -32,7 +32,7 @@ public class Calculator : MonoBehaviour
             if (num2 != 0)
                 resultText.text = (num1 / num2).ToString();
             else
-                resultText.text = "На нодь делить нельзя!";
+                resultText.text = "На ноль делить нельзя!";
         }
     }
     
