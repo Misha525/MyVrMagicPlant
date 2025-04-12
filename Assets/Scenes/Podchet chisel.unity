@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 163634464}
   - component: {fileID: 163634463}
   - component: {fileID: 163634462}
-  - component: {fileID: 163634466}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -225,18 +224,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &163634466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163634461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15ff24422e7b0a94d840cea6331edeca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &190836825
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,8 +236,9 @@ GameObject:
   - component: {fileID: 190836829}
   - component: {fileID: 190836828}
   - component: {fileID: 190836827}
+  - component: {fileID: 190836830}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SumOfEvenNumbersInRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 190836828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 190836830}
+        m_TargetAssemblyTypeName: SumOfEvenNumbersInRange, Assembly-CSharp
+        m_MethodName: OnSumEvenNumbersInRange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &190836828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +358,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190836825}
   m_CullTransparentMesh: 1
+--- !u!114 &190836830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190836825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ff24422e7b0a94d840cea6331edeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &308622548
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,8 +382,9 @@ GameObject:
   - component: {fileID: 308622552}
   - component: {fileID: 308622551}
   - component: {fileID: 308622550}
+  - component: {fileID: 308622553}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: FirstOfOccurrence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -440,7 +453,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308622551}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 308622553}
+        m_TargetAssemblyTypeName: FirstOfOccurrence, Assembly-CSharp
+        m_MethodName: OnFirstOccurrence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308622551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +504,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308622548}
   m_CullTransparentMesh: 1
+--- !u!114 &308622553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308622548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66289122c88096849b8eaa68b7052756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &490879572
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,8 +1012,9 @@ GameObject:
   - component: {fileID: 1010547800}
   - component: {fileID: 1010547799}
   - component: {fileID: 1010547798}
+  - component: {fileID: 1010547801}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SumOfEvenNumbersInArray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1045,7 +1083,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1010547799}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1010547801}
+        m_TargetAssemblyTypeName: SumOfEvenNumbersInArray, Assembly-CSharp
+        m_MethodName: OnSumEvenNumbersInArray
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1010547799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,6 +1134,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010547796}
   m_CullTransparentMesh: 1
+--- !u!114 &1010547801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010547796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c5edca0d43309438b7e856cf6665cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229143264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,8 +1547,9 @@ GameObject:
   - component: {fileID: 1599406158}
   - component: {fileID: 1599406157}
   - component: {fileID: 1599406156}
+  - component: {fileID: 1599406159}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: SelectionOfSort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,7 +1618,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1599406157}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1599406159}
+        m_TargetAssemblyTypeName: SelectionOfSort, Assembly-CSharp
+        m_MethodName: OnSelectionSort
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1599406157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,6 +1669,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599406154}
   m_CullTransparentMesh: 1
+--- !u!114 &1599406159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599406154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab17e52beb3a39b4b91a08275796827c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
