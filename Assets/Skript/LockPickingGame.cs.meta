@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7788bf68363176a41ad4f76556a4358b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - backgroundImage: {instanceID: 0}
+  - defaultBackground: {fileID: 21300000, guid: d9d7327e4d5a36441b0e8fa274848578, type: 3}
+  - winBackground: {fileID: 21300000, guid: f30cdf85a7e344241a2336d28afc0584, type: 3}
+  - timerText: {instanceID: 0}
+  - winPanel: {instanceID: 0}
+  - losePanel: {instanceID: 0}
+  - resetButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
