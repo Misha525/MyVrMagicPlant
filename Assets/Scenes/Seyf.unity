@@ -1416,14 +1416,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634996047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.014250258, w: -0.9998985}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1660831929}
   m_Father: {fileID: 623394747}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.633}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 1.4536133, y: 598.38}
@@ -1576,7 +1576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -959, y: -628}
+  m_AnchoredPosition: {x: -981, y: -653}
   m_SizeDelta: {x: 549.6611, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648760371
@@ -1706,19 +1706,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7788bf68363176a41ad4f76556a4358b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPins: 050000000500000005000000
-  initialTime: 30
+  minPinValue: 0
+  maxPinValue: 10
+  initialTime: 60
   pinTexts:
   - {fileID: 1436457896}
   - {fileID: 1907132353}
   - {fileID: 1848945188}
   timerText: {fileID: 1660831930}
+  targetPinsText: {fileID: 648760371}
   winPanel: {fileID: 1087599372}
   losePanel: {fileID: 1022203398}
   resetButton: {fileID: 1311664981}
   backgroundImage: {fileID: 646479173}
   defaultBackground: {fileID: 21300000, guid: d9d7327e4d5a36441b0e8fa274848578, type: 3}
   winBackground: {fileID: 21300000, guid: f30cdf85a7e344241a2336d28afc0584, type: 3}
+  loseBackground: {fileID: 21300000, guid: d9d7327e4d5a36441b0e8fa274848578, type: 3}
 --- !u!4 &719193721
 Transform:
   m_ObjectHideFlags: 0
@@ -2161,7 +2164,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 58.95365
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2736,8 +2739,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288322202
-  m_fontColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+    rgba: 4290295993
+  m_fontColor: {r: 0.7254902, g: 0.72156864, b: 0.72156864, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3214,8 +3217,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288322202
-  m_fontColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
+    rgba: 4290295993
+  m_fontColor: {r: 0.7264151, g: 0.7229886, b: 0.7229886, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3348,8 +3351,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288322202
-  m_fontColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
+    rgba: 4290295993
+  m_fontColor: {r: 0.7254902, g: 0.72156864, b: 0.72156864, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
